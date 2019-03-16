@@ -3,20 +3,20 @@
 #define MAX 100
 
 int xx;
-typedef struct{			// stacki bir struct olarak tanýmlayabiliriz
+typedef struct{			// stacki bir struct olarak tanÃ½mlayabiliriz
 	int item[MAX];		
 	int top;		
 }Stack;
 void initStack(Stack *s){	// stack dolmaya 0.bolumden baslar
 	s->top=0;
 }
-int isEmpty(Stack *s){	// stackin bos olup olmadýgýný kontrol eden fonksiyon
+int isEmpty(Stack *s){	// stackin bos olup olmadÃ½gÃ½nÃ½ kontrol eden fonksiyon
 	if(s->top==0)
 		return 1;
 	else
 		return 0;
 }
-int isFull(Stack *s){	// stackin dolu olup olmadýgýný kontrol eden fonksiyon
+int isFull(Stack *s){	// stackin dolu olup olmadÃ½gÃ½nÃ½ kontrol eden fonksiyon
 	if(s->top==MAX)
 		return 1;
 	else
