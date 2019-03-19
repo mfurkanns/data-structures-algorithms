@@ -10,7 +10,7 @@ typedef struct Que{
 
 
 int isEmpty(Que *q){
-	if(q->rear==0)
+	if(q->rear==-1)
 		return 1;
 	else
 		return 0;
