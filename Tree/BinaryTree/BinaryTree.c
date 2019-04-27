@@ -1,3 +1,5 @@
+// PLEASE USE THE INPUT.txt FILE TO INSERT USERS !
+
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -51,7 +53,7 @@ Kisi *contains(Kisi *head,int kimlikNo){  // Kisinin agacta olup olmadigini bula
 
 void insertNewUser(char ad[],char soyad[],int kimlikNo,int arkadaslar[],int arkSayi){
 									 //Agaca yeni kisi ekler. Parametre olarak kisinin bilgilerini alir.
-									 //Kisinin bilgileri Input.txt dosyasindan okunur.(Main'de bahsedilmiþtir)
+									 //Kisinin bilgileri Input.txt dosyasindan okunur.(Main'de bahsedilmiÅŸtir)
 									 //Bilgileri alinan kisi fonksiyonun icinde olusturulur.(newUser)
 									 // Algoritmada gelen her eleman kimlik No'suna gore agaca yerlestirilir.
 	int cik=1,i=0;					 
@@ -260,7 +262,7 @@ int main(){
 					free(arkadaslar);
 					arkadaslar=(int*)malloc(sizeof(int)*30);			
 				}
-				else{ // Kisinin hiç arkadasi olmama durumu 
+				else{ // Kisinin hiÃ§ arkadasi olmama durumu 
 					insertNewUser(ad,soyad,kimlikNo,arkadaslar,arkadasSayi);
 					x=fgetc(fp);			
 				}
