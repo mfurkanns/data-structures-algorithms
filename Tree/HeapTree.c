@@ -5,7 +5,6 @@
 
 int HT[MAX];
 
-
 void insert(int HT[],int *n,int value)
 {
 	int i,tmp,parent;
@@ -32,7 +31,6 @@ void insert(int HT[],int *n,int value)
 
 int findSmallestChild(int HT[],int i,int *n)
 {
-	
 	if(2*i+2<*n){
 		if(HT[2*i+1]<HT[2*i+2])
 		{
@@ -58,8 +56,6 @@ int removeMin(int HT[],int *n)
 	
 	if(n==0)
 		return -1;
-	
-
 	min=HT[0];
 	*n=*n-1;
 	HT[0]=HT[*n];
@@ -71,16 +67,12 @@ int removeMin(int HT[],int *n)
 		tmp=HT[i];
 		HT[i]=HT[adr];
 		HT[adr]=tmp;
-		
 		i=adr;
 		adr=findSmallestChild(HT,i,n);
-		
 	}
 	printf("Element removed from tree successfully.\n");
 	return min;
 }
-
-
 
 void printTree(int HT[],int *n)
 {
@@ -90,10 +82,6 @@ void printTree(int HT[],int *n)
 	}
 	printf("\n");
 }
-
-
-
-
 
 int main()
 {
@@ -110,12 +98,9 @@ int main()
 	
 	printf("\n");
 	printTree(HT,n);
-	
 	printf("Number of elements = %d\n",*n);
 	
-	
 	min=removeMin(HT,n);
-
 	printf("Removed element(min element) = %d\n",min);
 	printf("\n");
 	printf("New tree : \n");
