@@ -121,6 +121,6 @@ int main()
 	for(i=0;i<k;i++){
 		printf("%d ",dizi[i]);
 	}
-	 												// Complexity of HeapSort = n.logN
+	 								// Complexity of HeapSort = n.logN
 	return 0 ;
 }
