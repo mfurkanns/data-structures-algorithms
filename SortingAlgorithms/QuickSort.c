@@ -62,6 +62,7 @@ int main(){
 	printf("Sorted array :\n");	
 	for(i=0;i<k;i++)
 		printf("%d ",array[i]);		
-	
+					// Complexity of QuickSort : Worst Case = N*N
+					//			     Best Case = N*logN
 	return 0;
 }
