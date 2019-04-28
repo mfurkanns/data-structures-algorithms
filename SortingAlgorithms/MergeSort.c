@@ -61,7 +61,7 @@ int main(){
 	printf("Sorted array :\n");
 	for(i=0;i<k;i++)
 		printf("%d ",dizi[i]);
-	
+					// Complexity of MergeSort : N*logN
 	
 	return 0;
 }
