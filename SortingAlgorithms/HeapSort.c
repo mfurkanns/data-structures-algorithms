@@ -23,6 +23,28 @@ int findBiggestChild(int HT[],int i,int n)
 		return 0;
 	}	
 }
+
+void downHeap(int arr[],int n)
+{
+	int adr,i,tmp;
+	
+	i=0;
+	adr=findBiggestChild(arr,i,n);
+	
+	while(adr!=0&&arr[i]<arr[adr])
+	{
+		tmp=arr[i];
+		arr[i]=arr[adr];
+		arr[adr]=tmp;
+		
+		i=adr;
+		adr=findBiggestChild(arr,i,n);
+	}	
+}
+
+
+
+
 void maxHeapify(int arr[],int n){
 	
 	int i,parent,tmp,j,adr;
@@ -69,8 +91,8 @@ void heapSort(int arr[],int n)
 		tmp=arr[0];
 		arr[0]=arr[i];
 		arr[i]=tmp;
-		
-		maxHeapify(arr,i);
+		downHeap(arr,i);
+	// 	maxHeapify(arr,i);
 		
 	}
 }
