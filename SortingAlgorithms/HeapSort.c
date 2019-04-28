@@ -102,7 +102,7 @@ int main()
 	
 	srand(time(NULL));
 	
-	int n,*array,i,dizi[] = {4,10,7,3,5,7,3,7,7,1};
+	int n,*array,i,dizi[10];
 	int k=10;
 	
 	for(i=0;i<k;i++){
